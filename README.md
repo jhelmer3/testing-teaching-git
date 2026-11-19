@@ -1,2 +1,2 @@
 # testing-teaching-git
-Testing flow for teacihng basic Git functionality.
+Testing flow for teaching basic Git functionality. I have successfully pushed, and now I want to pull.
