@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home Page",
+    "section": "",
+    "text": "This is the home page for my new website!"
+  },
+  {
+    "objectID": "analysis.html",
+    "href": "analysis.html",
+    "title": "Analysis Report",
+    "section": "",
+    "text": "Code\nlibrary(palmerpenguins)\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "analysis.html#background",
+    "href": "analysis.html#background",
+    "title": "Analysis Report",
+    "section": "Background",
+    "text": "Background\nThe Palmer Penguins dataset contains measurements of penguins’ flippers, bills, and body mass."
+  },
+  {
+    "objectID": "analysis.html#methods",
+    "href": "analysis.html#methods",
+    "title": "Analysis Report",
+    "section": "Methods",
+    "text": "Methods\nWe used a multiple regression analysis to examine the effect of penguin species and bill depth on body mass."
+  },
+  {
+    "objectID": "analysis.html#results",
+    "href": "analysis.html#results",
+    "title": "Analysis Report",
+    "section": "Results",
+    "text": "Results\n\n\nCode\nm &lt;- lm(body_mass_g ~ species + flipper_length_mm, data = penguins)\ngtsummary::tbl_regression(m, intercept = TRUE)\n\n\n\n\n\n  \n    \n      Characteristic\n      Beta\n      95% CI\n      p-value\n    \n  \n  \n    (Intercept)\n-4,031\n-5,181, -2,882\n&lt;0.001\n    species\n\n\n\n        Adelie\n—\n—\n\n        Chinstrap\n-207\n-320, -93\n&lt;0.001\n        Gentoo\n267\n79, 454\n0.005\n    flipper_length_mm\n41\n35, 47\n&lt;0.001\n  \n  \n    \n      Abbreviation: CI = Confidence Interval\n    \n  \n\n\n\n\nAfter adjusting for penguin species, we found a significant effect of flipper length.\n\n\nCode\nggeffects::ggpredict(\n  m, terms = c(\"flipper_length_mm\", \"species\")\n) |&gt;\n  plot() +\n  theme_classic()"
+  },
+  {
+    "objectID": "analysis.html#discussion",
+    "href": "analysis.html#discussion",
+    "title": "Analysis Report",
+    "section": "Discussion",
+    "text": "Discussion\nPenguins have different sizes!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website is a way to practice creating Quarto websites and hosting them on GitHub."
+  }
+]

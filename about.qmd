@@ -1,0 +1,6 @@
+---
+title: "About"
+format: html
+---
+
+This website is a way to practice creating Quarto websites and hosting them on GitHub.
